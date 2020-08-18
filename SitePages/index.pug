@@ -1,0 +1,41 @@
+doctype html
+head
+	link(rel='stylesheet' href='../SiteAssets/css/vendors/materialize.min.css')
+	link(rel='stylesheet' href='../SiteAssets/css/vendors/all.min.css')
+	script(src='../SiteAssets/js/vendors/materialize.min.js')
+	script(src='../SiteAssets/js/index.js')
+body
+	nav
+		.nav-wrapper
+			a.brand-logo
+				| paypal
+				i.fab.fa-paypal
+			ul#nav-mobile.right.hide-on-small-and-down
+				li
+					a.dropdown-trigger(data-target='dropdown1')
+						| english
+						i.fas.fa-caret-down
+					ul.dropdown-content#dropdown1
+						li
+							a english
+						li
+							a french
+						li
+							a spanish
+						li
+							a chinese
+				li
+					a how it works
+				li
+					a offers
+				li
+					a help
+				li
+					a login
+				li
+					a signup
+	main
+		.container
+			.section.hero-section
+
+footer
