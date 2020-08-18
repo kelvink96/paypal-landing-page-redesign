@@ -1,0 +1,13 @@
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+.hero-section .hero-image-wrapper img {
+  width: 100%;
+}
+
+.get-started-section {
+  height: 40vh;
+  background-size: contain;
+  background: radial-gradient(rgba(0, 96, 184, 0.8), rgba(0, 96, 184, 0.4)), url("../../images/hero-image.jpg") no-repeat center;
+}
+
+/*# sourceMappingURL=index.css.map */
