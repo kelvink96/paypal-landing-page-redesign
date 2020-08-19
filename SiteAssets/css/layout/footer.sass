@@ -1,0 +1,27 @@
+@import "../themes/colors"
+@import "../components/buttons"
+
+footer, .page-footer
+  background-color: $color-dark-blue
+
+  .container
+    &:first-of-type
+      h5, a
+        text-transform: capitalize
+        color: white
+
+      ul
+        li
+          padding: .5em 0
+
+          a
+            &:hover,
+            &:focus
+              text-decoration: underline
+              cursor: pointer
+
+      button
+        margin: 1em 0
+
+        &:first-of-type
+          margin-right: 1em

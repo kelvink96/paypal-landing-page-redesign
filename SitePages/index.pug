@@ -1,132 +1,208 @@
+// TODO work on RWD
 doctype html
 head
+	meta(name="viewport" content="width=device-width, initial-scale=1.0")
 	link(rel='stylesheet' href='../SiteAssets/css/vendors/materialize.min.css')
 	link(rel='stylesheet' href='../SiteAssets/css/vendors/all.min.css')
 	link(rel='stylesheet' href='../SiteAssets/css/pages/index.css')
+	link(href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet")
 	script(src='../SiteAssets/js/vendors/materialize.min.js')
 	script(src='../SiteAssets/js/index.js')
 header
 	nav
 		.nav-wrapper
-			a.brand-logo
-				| paypal
+			a.brand-name
 				i.fab.fa-paypal
-			ul#nav-mobile.right.hide-on-small-and-down
+				| paypal
+			a.dropdown-trigger(data-target='dropdown1')
+				| English
+				i.fas.fa-angle-down
+			ul.dropdown-content#dropdown1
 				li
-					a.dropdown-trigger(data-target='dropdown1')
-						| english
-						i.fas.fa-angle-down
-					ul.dropdown-content#dropdown1
-						li
-							a english
-						li
-							a french
-						li
-							a spanish
-						li
-							a chinese
+					a english
 				li
-					a how it works
+					a french
 				li
-					a offers
+					a spanish
 				li
-					a help
-				li
-					a login
-				li
-					a signup
-
+					a chinese
+			ul#nav-mobile.right.hide-on-small-and-down.nav-items
+				li.nav-item
+					a.nav-link how it works
+				li.nav-item
+					a.nav-link offers
+				li.nav-item
+					a.nav-link help
+				li.nav-item
+					a.nav-link login
+				li.nav-item
+					a.nav-link signup
 body
 	main
 		.main-wrapper
 			.section.hero-section
 				.row.valign-wrapper
 					.col.m6
-						.hero-text-wrapper
-							h1
-								b The simpler, safer way to pay and get paid.
+						.hero-text-wrapper.container
+							h2
+								| The <strong>simpler</strong>, <strong>safer</strong> way to <strong>pay</strong> and get <strong>paid</strong>.
 							a.flow-text
 								i.fas.fa-play-circle
 								|  watch intro video
 							br
-							button.btn.btn-large sign up for free
-							button.btn.btn-large open a business account
+							button.btn.btn-large.btn-dark-blue-f sign up for free
+							button.btn.btn-large.btn-dark-blue-o open a business account
 					.col.m6
 						.hero-image-wrapper
 							img(src='../SiteAssets/images/hero-image-3.png')
 			.section.features-section
 				.container
-					.features-title
-						h3 how it works
-					.features-content
+					.section-title.center
+						h4 how it works
+					.section-content
 						.row
 							.col.s12.m4
-								.card
+								.card.center
 									.card-image
-										i.fas.fa-home.fa-2x.fa-fw
+										i.fas.fa-users.fa-4x
 									.card-content
-										h5 Individuals
+										h5.card-title Individuals
 										p Find out why we have more than 200M active accounts worldwide.
 									.card-action
-										a.btn learn more
+										a.btn.btn-med-blue-f learn more
 							.col.s12.m4
-								.card
+								.card.center
 									.card-image
-										i.fas.fa-home.fa-2x.fa-fw
+										i.fas.fa-briefcase.fa-4x
 									.card-content
-										h5 Businesses
+										h5.card-title Businesses
 										p Join more than 7 million businesses around the world offering PayPal.
 									.card-action
-										a.btn learn more
+										a.btn.btn-med-blue-f learn more
 							.col.s12.m4
-								.card
+								.card.center
 									.card-image
-										i.fas.fa-home.fa-2x.fa-fw
+										i.fas.fa-people-arrows.fa-4x
 									.card-content
-										h5 Partners and developers
+										h5.card-title Partners and developers
 										p Work with PayPal to offer your customers world class payment solutions.
 									.card-action
-										a.btn learn more
+										a.btn.btn-med-blue-f learn more
 			.section.offers-section
 				.container
-					.row
+					.row.valign-wrapper
 						.col.s12.m6
-							.offers-title
-								h3 paypal deals
+							.section-title
+								h4 paypal deals
 								p Let <b>Honey</b> do the coupon hunting for you.
-							.offers-content
-								button.btn
+							.section-content
+								button.btn.btn-large.btn-dark-blue-f
 									| join honey
 									i.fas.fa-plus
 						.col.s12.m6
 							.offers-video
 								div.video-container
 									iframe(width="853" height="480" src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0" frameborder="0" allowfullscreen)
-			.section.get-started-section.valign-wrapper
-				.container
-					h3 Simple and convenient
-					p Pay online with your PayPal password and skip entering your financial information. Or pay even faster with
-					| One Touch™, stay logged in and check out without entering your password. Plus, rest assured knowing Buyer
-					| Protection is available for your eligible purchases.
-					br
-					button.btn more about one touch
+			.section.get-started-section
+				.container.center
+					.section-title
+						h4 Simple and convenient
+					.section-content
+						p Pay online with your PayPal password and skip entering your financial information. Or pay even faster with
+							| One Touch™, stay logged in and check out without entering your password. Plus, rest assured knowing Buyer
+							| Protection is available for your eligible purchases.
+						br
+						button.btn.btn-white-f more about one touch
 			.section.testimonials-section
-				.container
-					.testimonials-title
-						h3 testimonials
-					.testimonials-content
+				.container.center
+					.section-title
+						h4 testimonials
+					.section-content
 						.carousel
 							a.carousel-item(href='#one!')
-								img(src='https://lorempixel.com/250/250/nature/1')
+								img(src='https://lorempixel.com/250/250/people/1')
+								.carousel-content
+									h6 User A, LA
+									p abc@def.com
+									p "PayPal is committed to making sure that the transactions are secure.
+										| This really seems to reassure buyers."
 							a.carousel-item(href='#two!')
-								img(src='https://lorempixel.com/250/250/nature/2')
+								img(src='https://lorempixel.com/250/250/people/2')
+								.carousel-content
+									h6 User B, SA
+									p def@ghi.com
+									p "There are a lot of reasons why PayPal is a better payment option online.."
 							a.carousel-item(href='#three!')
-								img(src='https://lorempixel.com/250/250/nature/3')
+								img(src='https://lorempixel.com/250/250/people/3')
+								.carousel-content
+									h6 User C, CA
+									p jkl@def.com
+									p “The beauty of PayPal is that you don’t need a secure server sitting in your basement.”
 							a.carousel-item(href='#four!')
-								img(src='https://lorempixel.com/250/250/nature/4')
+								img(src='https://lorempixel.com/250/250/people/4')
+								.carousel-content
+									h6 User D, DZ
+									p bhi@def.com
+									p “PayPal helps make chargebacks a very minimal part of our business.
+										| … Shoppers know that PayPal is the payment method they can trust.”
 							a.carousel-item(href='#five!')
-								img(src='https://lorempixel.com/250/250/nature/5')
-			// TODO add mobile downloads section and footer sections
+								img(src='https://lorempixel.com/250/250/people/5')
+								.carousel-content
+									h6 User E, MO
+									p abc@def.com
+									p “With PayPal, the amount of fraud is lower … which saves me money.”
+			.section.get-mobile-section
+				.container
+					.get-mobile-content
+						.row
+							.col.s12.m5
+								.section-title
+									h5 get the paypal app on your phone
+							.col.s12.m7
+								.section-content
+									.row
+										button.btn.btn-large.btn-med-blue-f
+											i.fab.fa-app-store
+											| get it on
+											u app store
+										button.btn.btn-large.btn-med-blue-f
+											i.fab.fa-google-play
+											| get it on
+											u google play
 
-
-footer
+footer.page-footer
+	.container
+		.row
+			.col.m3.s12
+				h5 paypal
+				ul
+					li
+						a about
+					li
+						a news
+					li
+						a jobs
+			.col.m3.s12
+				h5 help & support
+				ul
+					li
+						a FAQ
+					li
+						a login
+					li
+						a contact us
+			.col.m3.s12
+				h5 legal
+				ul
+					li
+						a terms & conditions
+					li
+						a privacy policy
+					li
+						a sitemap
+			.col.m3.s12
+				button.btn.btn-white-f signup
+				button.btn.btn-white-o login
+	.footer-copyright
+		.container
+			p.center &copy; 2020, all rights reserved

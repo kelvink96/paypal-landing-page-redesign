@@ -1,0 +1,41 @@
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+.btn-dark-blue-f {
+  background-color: #00417c;
+  color: white;
+}
+.btn-dark-blue-f:hover, .btn-dark-blue-f:focus {
+  background-color: transparent;
+  color: #00417c;
+}
+
+.btn-med-blue-f {
+  background-color: #0060b8;
+  color: white;
+}
+.btn-med-blue-f:hover, .btn-med-blue-f:focus {
+  background-color: transparent;
+  color: #0060b8;
+}
+
+.btn-dark-blue-o {
+  background-color: transparent;
+  border: 1.5px solid #00417c;
+  color: #00417c;
+}
+.btn-dark-blue-o:hover, .btn-dark-blue-o:focus {
+  background-color: #00417c;
+  color: white;
+}
+
+.btn-med-blue-o {
+  background-color: transparent;
+  border: 1.5px solid #0060b8;
+  color: #0060b8;
+}
+.btn-med-blue-o:hover, .btn-med-blue-o:focus {
+  background-color: #0060b8;
+  color: white;
+}
+
+/*# sourceMappingURL=buttons.css.map */

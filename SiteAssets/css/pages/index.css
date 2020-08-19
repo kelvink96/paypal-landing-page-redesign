@@ -1,13 +1,361 @@
+html, body {
+  font-family: "Roboto Slab", serif;
+}
+
 /* Color Theme Swatches in Hex */
 /* Color Theme Swatches in RGBA */
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+nav {
+  background-color: white;
+  padding: 0.5em 2em;
+  height: 100%;
+}
+nav .nav-wrapper a {
+  color: black;
+  text-transform: capitalize;
+}
+nav .nav-wrapper .brand-name, nav .nav-wrapper .dropdown-trigger {
+  margin-right: 1em;
+}
+nav .nav-wrapper .brand-name {
+  font-size: 2em;
+  border-right: 2px solid black;
+  padding-right: 1em;
+  color: #0060b8;
+  font-weight: bolder;
+}
+nav .nav-wrapper .brand-name i {
+  margin-right: 0.5em;
+}
+nav .nav-wrapper .dropdown-trigger {
+  vertical-align: top;
+}
+nav .nav-wrapper .dropdown-trigger i {
+  margin-left: 0.5em;
+  vertical-align: bottom;
+}
+
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+.section {
+  padding: 4em 0;
+  border-bottom: 1px solid lightgray;
+}
+.section .section-title {
+  padding: 2em 0;
+}
+.section .section-title * {
+  text-transform: capitalize;
+}
+.section .section-content {
+  padding: 2em 0;
+}
+
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+.btn {
+  box-shadow: none;
+  border-radius: 0;
+}
+.btn:hover, .btn:focus {
+  box-shadow: none;
+}
+
+.btn-large:hover, .btn-large:focus {
+  padding-top: -2px;
+}
+
+.btn-dark-blue-f {
+  background-color: #00417c;
+  color: white;
+}
+.btn-dark-blue-f:hover, .btn-dark-blue-f:focus {
+  border: 1.5px solid #00417c;
+  background-color: transparent;
+  color: #00417c;
+}
+
+.btn-med-blue-f {
+  background-color: #0060b8;
+  color: white;
+}
+.btn-med-blue-f:hover, .btn-med-blue-f:focus {
+  border: 1.5px solid #0060b8;
+  background-color: transparent;
+  color: #0060b8;
+}
+
+.btn-dark-blue-o {
+  background-color: transparent;
+  border: 1.5px solid #00417c;
+  color: #00417c;
+}
+.btn-dark-blue-o:hover, .btn-dark-blue-o:focus {
+  background-color: #00417c;
+  color: white;
+  border: none;
+}
+
+.btn-med-blue-o {
+  background-color: transparent;
+  border: 1.5px solid #0060b8;
+  color: #0060b8;
+}
+.btn-med-blue-o:hover, .btn-med-blue-o:focus {
+  background-color: #0060b8;
+  color: white;
+  border: none;
+}
+
+.btn-white-f {
+  background-color: white;
+  color: #00417c;
+}
+.btn-white-f:hover, .btn-white-f:focus {
+  background-color: transparent;
+  border: 1.5px solid white;
+  color: white;
+}
+
+.btn-white-o {
+  background-color: transparent;
+  border: 1.5px solid white;
+  color: white;
+}
+.btn-white-o:hover, .btn-white-o:focus {
+  background-color: white;
+  border: none;
+  color: #00417c;
+}
+
+footer, .page-footer {
+  background-color: #00417c;
+}
+footer .container:first-of-type h5, footer .container:first-of-type a, .page-footer .container:first-of-type h5, .page-footer .container:first-of-type a {
+  text-transform: capitalize;
+  color: white;
+}
+footer .container:first-of-type ul li, .page-footer .container:first-of-type ul li {
+  padding: 0.5em 0;
+}
+footer .container:first-of-type ul li a:hover, footer .container:first-of-type ul li a:focus, .page-footer .container:first-of-type ul li a:hover, .page-footer .container:first-of-type ul li a:focus {
+  text-decoration: underline;
+  cursor: pointer;
+}
+footer .container:first-of-type button, .page-footer .container:first-of-type button {
+  margin: 1em 0;
+}
+footer .container:first-of-type button:first-of-type, .page-footer .container:first-of-type button:first-of-type {
+  margin-right: 1em;
+}
+
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+.btn {
+  box-shadow: none;
+  border-radius: 0;
+}
+.btn:hover, .btn:focus {
+  box-shadow: none;
+}
+
+.btn-large:hover, .btn-large:focus {
+  padding-top: -2px;
+}
+
+.btn-dark-blue-f {
+  background-color: #00417c;
+  color: white;
+}
+.btn-dark-blue-f:hover, .btn-dark-blue-f:focus {
+  border: 1.5px solid #00417c;
+  background-color: transparent;
+  color: #00417c;
+}
+
+.btn-med-blue-f {
+  background-color: #0060b8;
+  color: white;
+}
+.btn-med-blue-f:hover, .btn-med-blue-f:focus {
+  border: 1.5px solid #0060b8;
+  background-color: transparent;
+  color: #0060b8;
+}
+
+.btn-dark-blue-o {
+  background-color: transparent;
+  border: 1.5px solid #00417c;
+  color: #00417c;
+}
+.btn-dark-blue-o:hover, .btn-dark-blue-o:focus {
+  background-color: #00417c;
+  color: white;
+  border: none;
+}
+
+.btn-med-blue-o {
+  background-color: transparent;
+  border: 1.5px solid #0060b8;
+  color: #0060b8;
+}
+.btn-med-blue-o:hover, .btn-med-blue-o:focus {
+  background-color: #0060b8;
+  color: white;
+  border: none;
+}
+
+.btn-white-f {
+  background-color: white;
+  color: #00417c;
+}
+.btn-white-f:hover, .btn-white-f:focus {
+  background-color: transparent;
+  border: 1.5px solid white;
+  color: white;
+}
+
+.btn-white-o {
+  background-color: transparent;
+  border: 1.5px solid white;
+  color: white;
+}
+.btn-white-o:hover, .btn-white-o:focus {
+  background-color: white;
+  border: none;
+  color: #00417c;
+}
+
+.card {
+  box-shadow: none;
+}
+
+.hero-section {
+  background-color: #f9f9f9;
+}
+.hero-section .hero-text-wrapper {
+  color: #00417c;
+}
+.hero-section .hero-text-wrapper a, .hero-section .hero-text-wrapper .flow-text {
+  color: #0060b8;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+.hero-section .hero-text-wrapper a:hover, .hero-section .hero-text-wrapper a:focus, .hero-section .hero-text-wrapper .flow-text:hover, .hero-section .hero-text-wrapper .flow-text:focus {
+  text-decoration: underline;
+}
+.hero-section .hero-text-wrapper button, .hero-section .hero-text-wrapper .btn {
+  margin-top: 1em;
+}
+.hero-section .hero-text-wrapper button:first-of-type, .hero-section .hero-text-wrapper .btn:first-of-type {
+  margin-right: 0.5em;
+}
 .hero-section .hero-image-wrapper img {
   width: 100%;
 }
 
+.features-section .section-content .card .card-image {
+  margin-bottom: 1em;
+}
+.features-section .section-content .card .card-image i {
+  color: #00417c;
+}
+.features-section .section-content .card .card-content {
+  margin-bottom: 1em;
+}
+.features-section .section-content .card .card-content .card-title {
+  margin-bottom: 1em;
+}
+
+.offers-section {
+  background-color: #f9f9f9;
+}
+.offers-section .section-title {
+  padding: 0;
+}
+.offers-section .section-content {
+  padding: 0;
+}
+.offers-section .section-content .btn i {
+  vertical-align: top;
+  margin-left: 0.5em;
+}
+
 .get-started-section {
-  height: 40vh;
-  background-size: contain;
+  background-size: cover;
   background: radial-gradient(rgba(0, 96, 184, 0.8), rgba(0, 96, 184, 0.4)), url("../../images/hero-image.jpg") no-repeat center;
+}
+.get-started-section .container .section-title {
+  padding: 0;
+}
+.get-started-section .container .section-title h4 {
+  color: white;
+}
+.get-started-section .container .section-content {
+  padding: 1em 0;
+}
+.get-started-section .container .section-content p {
+  color: white;
+}
+
+.testimonials-section .section-content .carousel .carousel-item {
+  width: 300px;
+}
+.testimonials-section .section-content .carousel .carousel-item img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.testimonials-section .section-content .carousel .carousel-item .carousel-content {
+  margin-top: -20px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  padding: 1em;
+  background-color: white;
+}
+.testimonials-section .section-content .carousel .carousel-item .carousel-content h6, .testimonials-section .section-content .carousel .carousel-item .carousel-content p {
+  color: black;
+}
+.testimonials-section .section-content .carousel .carousel-item .carousel-content p:first-of-type {
+  color: #0060b8;
+}
+.testimonials-section .section-content .carousel .carousel-item .carousel-content p:last-of-type {
+  font-style: italic;
+}
+.testimonials-section .section-content .carousel .indicators {
+  margin-top: 20px;
+}
+.testimonials-section .section-content .carousel .indicators .indicator-item {
+  background-color: #0060b8;
+}
+.testimonials-section .section-content .carousel .indicators .active {
+  background-color: #00417c;
+  width: 20px;
+  border-radius: 10px;
+}
+
+.get-mobile-section {
+  background-color: #f9f9f9;
+}
+.get-mobile-section .section-title {
+  padding: 0;
+}
+.get-mobile-section .section-content {
+  padding: 0;
+}
+.get-mobile-section .section-content .btn {
+  margin-right: 1em;
+}
+.get-mobile-section .section-content .btn i {
+  vertical-align: top;
+  margin-right: 0.5em;
+}
+.get-mobile-section .section-content .btn u {
+  margin-left: 0.5em;
 }
 
 /*# sourceMappingURL=index.css.map */

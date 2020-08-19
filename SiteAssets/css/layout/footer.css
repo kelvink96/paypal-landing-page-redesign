@@ -1,0 +1,84 @@
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+.btn {
+  box-shadow: none;
+  border-radius: 0;
+}
+.btn:hover, .btn:focus {
+  box-shadow: none;
+}
+
+.btn-large:hover, .btn-large:focus {
+  padding-top: -2px;
+}
+
+.btn-dark-blue-f {
+  background-color: #00417c;
+  color: white;
+}
+.btn-dark-blue-f:hover, .btn-dark-blue-f:focus {
+  border: 1.5px solid #00417c;
+  background-color: transparent;
+  color: #00417c;
+}
+
+.btn-med-blue-f {
+  background-color: #0060b8;
+  color: white;
+}
+.btn-med-blue-f:hover, .btn-med-blue-f:focus {
+  border: 1.5px solid #0060b8;
+  background-color: transparent;
+  color: #0060b8;
+}
+
+.btn-dark-blue-o {
+  background-color: transparent;
+  border: 1.5px solid #00417c;
+  color: #00417c;
+}
+.btn-dark-blue-o:hover, .btn-dark-blue-o:focus {
+  background-color: #00417c;
+  color: white;
+  border: none;
+}
+
+.btn-med-blue-o {
+  background-color: transparent;
+  border: 1.5px solid #0060b8;
+  color: #0060b8;
+}
+.btn-med-blue-o:hover, .btn-med-blue-o:focus {
+  background-color: #0060b8;
+  color: white;
+  border: none;
+}
+
+.btn-white-f {
+  background-color: white;
+  color: #00417c;
+}
+.btn-white-f:hover, .btn-white-f:focus {
+  background-color: transparent;
+  border: 1.5px solid white;
+  color: white;
+}
+
+.btn-white-o {
+  background-color: transparent;
+  border: 1.5px solid white;
+  color: #00417c;
+}
+.btn-white-o:hover, .btn-white-o:focus {
+  background-color: white;
+  border: none;
+  color: #00417c;
+}
+
+footer {
+  background-color: #0060b8;
+}
+
+/*# sourceMappingURL=footer.css.map */

@@ -1,11 +1,136 @@
+@import "../abstract/mixins"
+@import "../base/typography"
 @import "../themes/colors"
+@import "../layout/nav"
+@import "../layout/section"
+@import "../layout/footer"
+@import "../components/buttons"
+@import "../components/cards"
 
 .hero-section
+  background-color: $color-light-grey
+
+  .hero-text-wrapper
+    color: $color-dark-blue
+
+    a, .flow-text
+      color: $color-med-blue
+      text-transform: capitalize
+      text-decoration: underline
+
+      &:hover,
+      &:focus
+        text-decoration: underline
+
+    button, .btn
+      margin-top: 1em
+
+      &:first-of-type
+        margin-right: .5em
+
   .hero-image-wrapper
     img
       width: 100%
 
+.features-section
+  .section-content
+    .card
+      .card-image
+        margin-bottom: 1em
+
+        i
+          color: $color-dark-blue
+
+      .card-content
+        margin-bottom: 1em
+
+        .card-title
+          margin-bottom: 1em
+
+.offers-section
+  background-color: $color-light-grey
+
+  .section-title
+    padding: 0
+
+  .section-content
+    padding: 0
+
+    .btn
+      i
+        vertical-align: top
+        margin-left: .5em
+
 .get-started-section
-  height: 40vh
-  background-size: contain
+  background-size: cover
   background: radial-gradient(rgba(0, 96, 184, .8), rgba(0, 96, 184, .4)), url("../../images/hero-image.jpg") no-repeat center
+
+  .container
+    .section-title
+      padding: 0
+
+      h4
+        color: white
+
+    .section-content
+      padding: 1em 0
+
+      p
+        color: white
+
+.testimonials-section
+  .section-content
+    .carousel
+      .carousel-item
+        width: 300px
+
+        img
+          width: 60px
+          height: 60px
+          border-radius: 50%
+
+        .carousel-content
+          margin-top: -20px
+          @include shadow
+          padding: 1em
+          background-color: white
+
+          h6, p
+            color: black
+
+          p
+            &:first-of-type
+              color: $color-med-blue
+
+            &:last-of-type
+              font-style: italic
+
+      .indicators
+        margin-top: 20px
+
+        .indicator-item
+          background-color: $color-med-blue
+
+        .active
+          background-color: $color-dark-blue
+          width: 20px
+          border-radius: 10px
+
+.get-mobile-section
+  background-color: $color-light-grey
+
+  .section-title
+    padding: 0
+
+  .section-content
+    padding: 0
+
+    .btn
+      margin-right: 1em
+
+      i
+        vertical-align: top
+        margin-right: .5em
+
+      u
+        margin-left: .5em
