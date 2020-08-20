@@ -15,7 +15,7 @@ nav {
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
 }
 nav .nav-wrapper a {
-  color: black;
+  color: #00417c;
   text-transform: capitalize;
 }
 nav .nav-wrapper .sidenav-trigger {
@@ -40,6 +40,10 @@ nav .nav-wrapper .dropdown-trigger {
 nav .nav-wrapper .dropdown-trigger i {
   margin-left: 0.5em;
   vertical-align: bottom;
+}
+nav .nav-wrapper .nav-items .nav-item .nav-link:not(.btn):hover, nav .nav-wrapper .nav-items .nav-item .nav-link:not(.btn):focus {
+  text-decoration: underline;
+  background-color: transparent;
 }
 
 @media only screen and (max-width: 600px) {
@@ -134,7 +138,6 @@ nav .nav-wrapper .dropdown-trigger i {
 .btn-dark-blue-o:hover, .btn-dark-blue-o:focus {
   background-color: #00417c;
   color: white;
-  border: none;
 }
 
 .btn-med-blue-o {
@@ -145,7 +148,6 @@ nav .nav-wrapper .dropdown-trigger i {
 .btn-med-blue-o:hover, .btn-med-blue-o:focus {
   background-color: #0060b8;
   color: white;
-  border: none;
 }
 
 .btn-white-f {
@@ -165,7 +167,6 @@ nav .nav-wrapper .dropdown-trigger i {
 }
 .btn-white-o:hover, .btn-white-o:focus {
   background-color: white;
-  border: none;
   color: #00417c;
 }
 
@@ -246,7 +247,6 @@ footer .container:first-of-type button:first-of-type, .page-footer .container:fi
 .btn-dark-blue-o:hover, .btn-dark-blue-o:focus {
   background-color: #00417c;
   color: white;
-  border: none;
 }
 
 .btn-med-blue-o {
@@ -257,7 +257,6 @@ footer .container:first-of-type button:first-of-type, .page-footer .container:fi
 .btn-med-blue-o:hover, .btn-med-blue-o:focus {
   background-color: #0060b8;
   color: white;
-  border: none;
 }
 
 .btn-white-f {
@@ -277,7 +276,6 @@ footer .container:first-of-type button:first-of-type, .page-footer .container:fi
 }
 .btn-white-o:hover, .btn-white-o:focus {
   background-color: white;
-  border: none;
   color: #00417c;
 }
 
@@ -294,7 +292,6 @@ footer .container:first-of-type button:first-of-type, .page-footer .container:fi
 .hero-section .hero-text-wrapper a, .hero-section .hero-text-wrapper .flow-text {
   color: #0060b8;
   text-transform: capitalize;
-  text-decoration: underline;
 }
 .hero-section .hero-text-wrapper a:hover, .hero-section .hero-text-wrapper a:focus, .hero-section .hero-text-wrapper .flow-text:hover, .hero-section .hero-text-wrapper .flow-text:focus {
   text-decoration: underline;
@@ -313,7 +310,7 @@ footer .container:first-of-type button:first-of-type, .page-footer .container:fi
   margin-bottom: 1em;
 }
 .features-section .section-content .card .card-image i {
-  color: #00417c;
+  color: #0060b8;
 }
 .features-section .section-content .card .card-content {
   margin-bottom: 1em;
@@ -334,6 +331,9 @@ footer .container:first-of-type button:first-of-type, .page-footer .container:fi
 .offers-section .section-content .btn i {
   vertical-align: top;
   margin-left: 0.5em;
+}
+.offers-section .section-content .btn:hover, .offers-section .section-content .btn:focus {
+  margin-top: -2px;
 }
 
 .get-started-section {

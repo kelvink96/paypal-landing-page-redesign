@@ -17,7 +17,6 @@
     a, .flow-text
       color: $color-med-blue
       text-transform: capitalize
-      text-decoration: underline
 
       &:hover,
       &:focus
@@ -40,7 +39,7 @@
         margin-bottom: 1em
 
         i
-          color: $color-dark-blue
+          color: $color-med-blue
 
       .card-content
         margin-bottom: 1em
@@ -62,6 +61,10 @@
         vertical-align: top
         margin-left: .5em
 
+      &:hover,
+      &:focus
+        margin-top: -2px
+
 .get-started-section
   background-size: cover
   background: radial-gradient(rgba(0, 96, 184, .8), rgba(0, 96, 184, .4)), url("../../images/hero-image.jpg") no-repeat center
@@ -78,6 +81,7 @@
 
       p
         color: white
+
 
 .testimonials-section
   .section-content

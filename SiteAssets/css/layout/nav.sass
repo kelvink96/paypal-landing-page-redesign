@@ -8,7 +8,7 @@ nav
 
   .nav-wrapper
     a
-      color: black
+      color: $color-dark-blue
       text-transform: capitalize
 
     .sidenav-trigger
@@ -33,6 +33,14 @@ nav
       i
         margin-left: .5em
         vertical-align: bottom
+
+    .nav-items
+      .nav-item
+        .nav-link:not(.btn)
+          &:hover,
+          &:focus
+            text-decoration: underline
+            background-color: transparent
 
 @media only screen and (max-width: 600px)
   nav
