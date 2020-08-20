@@ -1,4 +1,3 @@
-// TODO work on RWD
 doctype html
 head
 	meta(name="viewport" content="width=device-width, initial-scale=1.0")
@@ -11,10 +10,12 @@ head
 header
 	nav
 		.nav-wrapper
+			a(data-target='nav-mobile').sidenav-trigger.right
+				i.fas.fa-bars
 			a.brand-name
 				i.fab.fa-paypal
 				| paypal
-			a.dropdown-trigger(data-target='dropdown1')
+			a.dropdown-trigger(data-target='dropdown1').hide-on-small-and-down
 				| English
 				i.fas.fa-angle-down
 			ul.dropdown-content#dropdown1
@@ -26,7 +27,7 @@ header
 					a spanish
 				li
 					a chinese
-			ul#nav-mobile.right.hide-on-small-and-down.nav-items
+			ul.right.hide-on-small-and-down.nav-items
 				li.nav-item
 					a.nav-link how it works
 				li.nav-item
@@ -37,12 +38,41 @@ header
 					a.nav-link login
 				li.nav-item
 					a.nav-link signup
+	ul#nav-mobile.sidenav
+		h5.center Menu
+		li.nav-item
+			a.nav-link how it works
+		li.nav-item
+			a.nav-link offers
+		li.nav-item
+			a.nav-link help
+		li.nav-item
+			a.nav-link login
+		li.nav-item
+			a.nav-link signup
+		li.nav-item
+			a.dropdown-trigger.nav-link(data-target='dropdown1')
+				| English
+				i.fas.fa-angle-down
+			ul.dropdown-content#dropdown2
+				li
+					a english
+				li
+					a french
+				li
+					a spanish
+				li
+					a chinese
+
 body
 	main
 		.main-wrapper
 			.section.hero-section
 				.row.valign-wrapper
-					.col.m6
+					.col.m6.s12.hide-on-med-and-up
+						.hero-image-wrapper
+							img(src='../SiteAssets/images/hero-image-3.png')
+					.col.m6.s12
 						.hero-text-wrapper.container
 							h2
 								| The <strong>simpler</strong>, <strong>safer</strong> way to <strong>pay</strong> and get <strong>paid</strong>.
@@ -52,7 +82,7 @@ body
 							br
 							button.btn.btn-large.btn-dark-blue-f sign up for free
 							button.btn.btn-large.btn-dark-blue-o open a business account
-					.col.m6
+					.col.m6.s12.hide-on-small-and-down
 						.hero-image-wrapper
 							img(src='../SiteAssets/images/hero-image-3.png')
 			.section.features-section
@@ -96,7 +126,7 @@ body
 								h4 paypal deals
 								p Let <b>Honey</b> do the coupon hunting for you.
 							.section-content
-								button.btn.btn-large.btn-dark-blue-f
+								button.btn.btn-dark-blue-f
 									| join honey
 									i.fas.fa-plus
 						.col.s12.m6
@@ -160,19 +190,18 @@ body
 									h5 get the paypal app on your phone
 							.col.s12.m7
 								.section-content
-									.row
-										button.btn.btn-large.btn-med-blue-f
-											i.fab.fa-app-store
-											| get it on
-											u app store
-										button.btn.btn-large.btn-med-blue-f
-											i.fab.fa-google-play
-											| get it on
-											u google play
+									button.btn.btn-large.btn-med-blue-f
+										i.fab.fa-app-store
+										| get it on
+										u app store
+									button.btn.btn-large.btn-med-blue-f
+										i.fab.fa-google-play
+										| get it on
+										u google play
 
 footer.page-footer
 	.container
-		.row
+		.row.hide-on-small-and-down
 			.col.m3.s12
 				h5 paypal
 				ul
@@ -201,6 +230,47 @@ footer.page-footer
 					li
 						a sitemap
 			.col.m3.s12
+				button.btn.btn-white-f signup
+				button.btn.btn-white-o login
+		.row.hide-on-med-and-up
+			ul.collapsible
+				li
+					h5.collapsible-header
+						| paypal
+						i.fas.fa-expand
+					.collapsible-body
+						ul
+							li
+								a about
+							li
+								a news
+							li
+								a jobs
+				li
+					h5.collapsible-header
+						| help & support
+						i.fas.fa-expand
+					.collapsible-body
+						ul
+							li
+								a FAQ
+							li
+								a login
+							li
+								a contact us
+				li
+					h5.collapsible-header
+						| legal
+						i.fas.fa-expand
+					.collapsible-body
+						ul
+							li
+								a terms & conditions
+							li
+								a privacy policy
+							li
+								a sitemap
+			.row.center
 				button.btn.btn-white-f signup
 				button.btn.btn-white-o login
 	.footer-copyright

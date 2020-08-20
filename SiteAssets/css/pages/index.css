@@ -10,10 +10,16 @@ nav {
   background-color: white;
   padding: 0.5em 2em;
   height: 100%;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
 }
 nav .nav-wrapper a {
   color: black;
   text-transform: capitalize;
+}
+nav .nav-wrapper .sidenav-trigger {
+  color: #00417c;
 }
 nav .nav-wrapper .brand-name, nav .nav-wrapper .dropdown-trigger {
   margin-right: 1em;
@@ -36,6 +42,27 @@ nav .nav-wrapper .dropdown-trigger i {
   vertical-align: bottom;
 }
 
+@media only screen and (max-width: 600px) {
+  nav {
+    padding: 1em 1.5em 0 1.5em;
+  }
+  nav .nav-wrapper .brand-name {
+    border-right: none;
+  }
+  nav .nav-wrapper .sidenav-trigger {
+    margin: 0;
+  }
+}
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+.sidenav a {
+  text-transform: capitalize;
+}
+.sidenav li a i {
+  float: none;
+  margin-left: 0.5em;
+}
+
 /* Color Theme Swatches in Hex */
 /* Color Theme Swatches in RGBA */
 .section {
@@ -52,6 +79,17 @@ nav .nav-wrapper .dropdown-trigger i {
   padding: 2em 0;
 }
 
+@media only screen and (max-width: 600px) {
+  .section .section-title, .section .section-content {
+    text-align: center;
+  }
+  .section .section-title {
+    padding: 2em 0;
+  }
+  .section .section-content {
+    padding: 1em 0;
+  }
+}
 /* Color Theme Swatches in Hex */
 /* Color Theme Swatches in RGBA */
 /* Color Theme Swatches in Hex */
@@ -152,6 +190,20 @@ footer .container:first-of-type button:first-of-type, .page-footer .container:fi
   margin-right: 1em;
 }
 
+@media only screen and (max-width: 600px) {
+  .collapsible {
+    border: none;
+    box-shadow: none;
+  }
+  .collapsible h5, .collapsible .collapsible-header {
+    background-color: transparent;
+    margin: 0;
+  }
+  .collapsible h5 i, .collapsible .collapsible-header i {
+    margin-top: 0.2em;
+    margin-left: auto;
+  }
+}
 /* Color Theme Swatches in Hex */
 /* Color Theme Swatches in RGBA */
 .btn {
@@ -327,7 +379,7 @@ footer .container:first-of-type button:first-of-type, .page-footer .container:fi
   font-style: italic;
 }
 .testimonials-section .section-content .carousel .indicators {
-  margin-top: 20px;
+  margin-top: 2em;
 }
 .testimonials-section .section-content .carousel .indicators .indicator-item {
   background-color: #0060b8;
@@ -356,6 +408,37 @@ footer .container:first-of-type button:first-of-type, .page-footer .container:fi
 }
 .get-mobile-section .section-content .btn u {
   margin-left: 0.5em;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-section .valign-wrapper {
+    display: block;
+  }
+  .hero-section .hero-text-wrapper {
+    text-align: center;
+  }
+
+  .offers-section .container .valign-wrapper {
+    display: block;
+  }
+  .offers-section .container .col {
+    margin: 1em 0;
+  }
+
+  .testimonials-section .section-content .carousel .carousel-item {
+    width: 250px;
+  }
+  .testimonials-section .section-content .carousel .carousel-item .carousel-content {
+    margin-top: -20px;
+    padding: 0.5em;
+  }
+  .testimonials-section .section-content .carousel .indicators {
+    margin-top: 2em;
+  }
+
+  .get-mobile-section .section-content .btn {
+    margin: 1em 0;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

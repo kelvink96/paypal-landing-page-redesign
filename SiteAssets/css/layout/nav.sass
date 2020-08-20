@@ -4,11 +4,15 @@ nav
   background-color: white
   padding: .5em 2em
   height: 100%
+  @include shadow
 
   .nav-wrapper
     a
       color: black
       text-transform: capitalize
+
+    .sidenav-trigger
+      color: $color-dark-blue
 
     .brand-name, .dropdown-trigger
       margin-right: 1em
@@ -29,3 +33,14 @@ nav
       i
         margin-left: .5em
         vertical-align: bottom
+
+@media only screen and (max-width: 600px)
+  nav
+    padding: 1em 1.5em 0 1.5em
+
+    .nav-wrapper
+      .brand-name
+        border-right: none
+
+      .sidenav-trigger
+        margin: 0

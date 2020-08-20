@@ -2,6 +2,7 @@
 @import "../base/typography"
 @import "../themes/colors"
 @import "../layout/nav"
+@import "../layout/sidenav"
 @import "../layout/section"
 @import "../layout/footer"
 @import "../components/buttons"
@@ -106,7 +107,7 @@
               font-style: italic
 
       .indicators
-        margin-top: 20px
+        margin-top: 2em
 
         .indicator-item
           background-color: $color-med-blue
@@ -134,3 +135,37 @@
 
       u
         margin-left: .5em
+
+@media only screen and (max-width: 600px)
+  .hero-section
+    .valign-wrapper
+      display: block
+
+    .hero-text-wrapper
+      text-align: center
+
+  .offers-section
+    .container
+      .valign-wrapper
+        display: block
+
+      .col
+        margin: 1em 0
+
+  .testimonials-section
+    .section-content
+      .carousel
+        .carousel-item
+          width: 250px
+
+          .carousel-content
+            margin-top: -20px
+            padding: .5em
+
+        .indicators
+          margin-top: 2em
+
+  .get-mobile-section
+    .section-content
+      .btn
+        margin: 1em 0
