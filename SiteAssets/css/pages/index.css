@@ -57,6 +57,14 @@ nav .nav-wrapper .nav-items .nav-item .nav-link:not(.btn):hover, nav .nav-wrappe
     margin: 0;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  nav {
+    padding: 0 0 0 0.75em;
+  }
+  nav .nav-wrapper .nav-items .nav-item .nav-link {
+    padding: 0 0.75em;
+  }
+}
 /* Color Theme Swatches in Hex */
 /* Color Theme Swatches in RGBA */
 .sidenav a {
@@ -401,6 +409,7 @@ footer .container:first-of-type button:first-of-type, .page-footer .container:fi
 }
 .get-mobile-section .section-content .btn {
   margin-right: 1em;
+  margin-bottom: 1em;
 }
 .get-mobile-section .section-content .btn i {
   vertical-align: top;
