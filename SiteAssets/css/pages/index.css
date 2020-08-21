@@ -16,17 +16,17 @@ nav {
 }
 nav .nav-wrapper a {
   color: #00417c;
-  text-transform: capitalize;
 }
 nav .nav-wrapper .sidenav-trigger {
   color: #00417c;
 }
 nav .nav-wrapper .brand-name, nav .nav-wrapper .dropdown-trigger {
   margin-right: 1em;
+  text-transform: capitalize;
 }
 nav .nav-wrapper .brand-name {
   font-size: 2em;
-  border-right: 2px solid black;
+  border-right: 2px solid lightgray;
   padding-right: 1em;
   color: #0060b8;
   font-weight: bolder;
@@ -40,6 +40,12 @@ nav .nav-wrapper .dropdown-trigger {
 nav .nav-wrapper .dropdown-trigger i {
   margin-left: 0.5em;
   vertical-align: bottom;
+}
+nav .nav-wrapper .dropdown-content li a {
+  text-transform: capitalize;
+}
+nav .nav-wrapper .nav-items .nav-item .nav-link:not(.btn) {
+  text-transform: capitalize;
 }
 nav .nav-wrapper .nav-items .nav-item .nav-link:not(.btn):hover, nav .nav-wrapper .nav-items .nav-item .nav-link:not(.btn):focus {
   text-decoration: underline;
@@ -406,6 +412,7 @@ footer .container:first-of-type button:first-of-type, .page-footer .container:fi
 }
 .get-mobile-section .section-content {
   padding: 0;
+  margin-top: 1em;
 }
 .get-mobile-section .section-content .btn {
   margin-right: 1em;
@@ -415,7 +422,7 @@ footer .container:first-of-type button:first-of-type, .page-footer .container:fi
   vertical-align: top;
   margin-right: 0.5em;
 }
-.get-mobile-section .section-content .btn u {
+.get-mobile-section .section-content .btn b {
   margin-left: 0.5em;
 }
 

@@ -9,17 +9,17 @@ nav
   .nav-wrapper
     a
       color: $color-dark-blue
-      text-transform: capitalize
 
     .sidenav-trigger
       color: $color-dark-blue
 
     .brand-name, .dropdown-trigger
       margin-right: 1em
+      text-transform: capitalize
 
     .brand-name
       font-size: 2em
-      border-right: 2px solid black
+      border-right: 2px solid lightgray
       padding-right: 1em
       color: $color-med-blue
       font-weight: bolder
@@ -34,9 +34,16 @@ nav
         margin-left: .5em
         vertical-align: bottom
 
+    .dropdown-content
+      li
+        a
+          text-transform: capitalize
+
     .nav-items
       .nav-item
         .nav-link:not(.btn)
+          text-transform: capitalize
+
           &:hover,
           &:focus
             text-decoration: underline
